@@ -19,7 +19,10 @@ def sms_ahoy_reply():
         # Determine amount of calories left in their diet for the day
         consumedCalories = int(body)   
         caloriesRemaining = 2000 - consumedCalories
-        resp.message("You have {} Calories remaining for the day (2000 Calorie diet).".format(caloriesRemaining))
+        if caloriesRemaining > 0:
+            resp.message("You have {} Calories remaining for the day (2000 Calorie diet).".format(caloriesRemaining))
+        else:
+            resp.message("You have exceeded the recommended calorie intake for today.")
     else:
         resp.message("Please send Calorie intake only.")
 
