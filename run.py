@@ -22,7 +22,7 @@ def sms_ahoy_reply():
         if caloriesRemaining > 0:
             resp.message("You have {} Calories remaining for the day (2000 Calorie diet).".format(caloriesRemaining))
         else:
-            resp.message("You have exceeded the recommended calorie intake for today.")
+            resp.message("You have exceeded the recommended calorie intake for today by {} calories.".format(abs(caloriesRemaining)))
     else:
         resp.message("Please send Calorie intake only.")
 
