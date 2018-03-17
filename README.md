@@ -4,4 +4,4 @@ Calorie Tracker is an app that allows you to keep track of how many calories you
 #### Text your calorie intake to (856) 314 5301.
 
 ### Resources Used:
-We followed [this]https://www.twilio.com/docs/quickstart/python/sms) guide to set up this app.
+We followed [this](https://www.twilio.com/docs/quickstart/python/sms) guide to set up this app.
